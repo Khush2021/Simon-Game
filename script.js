@@ -7,7 +7,7 @@ let userSequence = [];
 let buttonColours = ["red", "blue", "green", "yellow"];
 
 $(document).on("keydown", gameStart);
-$(document).on("ontouchstart", gameStart);
+$(document).on("click", gameStart);
 
 
 function gameStart() {
@@ -42,7 +42,7 @@ function animateButton(color) {
 }
 
 $(".btn").on("click", currentGame);
-$(".btn").on("ontouchstart", currentGame);
+// $(".btn").on("ontouchstart", currentGame);
 
 
 function currentGame() {
